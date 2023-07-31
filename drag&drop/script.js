@@ -9,6 +9,8 @@ for(list of lists){
     list.addEventListener("dragstart", function(e){
         let selected = e.target;
 
+        // drag the element into right box
+
         rightBox.addEventListener("dragover", function(e){
             e.preventDefault();
         });
@@ -18,6 +20,8 @@ for(list of lists){
             selected = null;
         });
 
+            //  drag the element into left box
+        
         leftBox.addEventListener("dragover", function(e){
             e.preventDefault();
         });
